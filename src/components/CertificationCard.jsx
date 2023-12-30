@@ -10,7 +10,7 @@ export const CertificationCard = (props) => {
     <div onClick={openCert} className="cert-card" style={{height : 'auto'}}>
       <div className="cert-img">
         <div style={{padding : '10px', backgroundColor : '#fff' , borderRadius : '100%', height:`100px` , display : `flex` , alignItems : 'center' , margin : '10px'}}>
-            <img src={props.IssuerIcon} alt={props.name} />
+            <img src={props.IssuerIcon} alt={`@dnipy `+props.name} />
         </div>
       </div>
       <div style={{margin : 'auto'}} >

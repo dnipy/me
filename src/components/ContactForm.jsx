@@ -17,7 +17,7 @@ const ContactForm = () => {
           <div className="hero-socials">
             {socials.map((social, index) => (
               <a key={index} href={social.url}>
-                <img style={{borderRadius : "100%"}} src={`/socials/${social.icon}`} alt="" />
+                <img style={{borderRadius : "100%"}} src={`/me/socials/${social.icon}`} alt="@dnipy" />
               </a>
             ))}
           </div>

@@ -13,7 +13,7 @@ const Hero = (props) => {
         whileHover={{ scale: 1.3}}
         className="pfp"
       >
-        <img src={props.img} alt="dnipy" />
+        <img src={props.img} alt="@dnipy" />
       </motion.div>
 
       <Heading firstWord="Who" secondWord="AmI?" />
@@ -56,7 +56,7 @@ const Hero = (props) => {
         <div className="hero-socials">
           {socials.map((social, index) => (
             <a key={index} href={social.url}>
-              <img style={{borderRadius : '100%'}} src={`/socials/${social.icon}`} alt="" />
+              <img style={{borderRadius : '100%'}} src={`/me/socials/${social.icon}`} alt="@dnipy" />
             </a>
           ))}
         </div>

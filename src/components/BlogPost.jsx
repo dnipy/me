@@ -10,7 +10,7 @@ const BlogPost = (props) => {
   return (
     <div className="project-card post-card">
       <div className="project-img">
-        <img src={props.image} alt={props.title} />
+        <img src={props.image} alt={`@dnipy `+props.title} />
       </div>
       <div className="project-title">
         <h2 className="post-title">{props.title}</h2>

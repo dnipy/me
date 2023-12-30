@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
   return (
     <div className="project-card" onClick={()=>window.open(props.preview)}>
       <div className="project-img">
-        <img src={props.img} alt={props.name} />
+        <img src={`/me`+props.img} alt={`@dnipy ` +props.name} />
       </div>
       <div style={{height : "130px"}}>
           <div className="project-title">
