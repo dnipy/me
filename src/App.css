@@ -13,7 +13,7 @@
   list-style: none;
 }
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -22,7 +22,7 @@ body {
   background-color: #212529;
   color: #fff;
   margin: 0;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: "Share Tech Mono", monospace;
 }
 /* .container {

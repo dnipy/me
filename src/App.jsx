@@ -49,32 +49,13 @@ function App() {
         lastName={information.userData.lastName}
       />
       <Hero
-        img={information.userData.img}
+        // img={information.userData.img}
         description={information.userData.description}
         title={information.userData.title}
       />
       
       <div className="hr"></div>
-      
-      <section id="skills">
-        <Heading firstWord="Skills" secondWord="&Tools" />
-        <motion.div
-          className="skill-map"
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={containerVariants}
-        >
-          {skills.map((skill, index) => (
-            <motion.div key={index} variants={skillVariants}>
-              <Skill skill={skill} />
-            </motion.div>
-          ))}
-        </motion.div>
-      </section>
-
-      <div className="hr"></div>
-
+    
       <section id="Certifications">
         <Heading firstWord="My" secondWord="Certifications" />
         <motion.div
@@ -102,6 +83,25 @@ function App() {
                   Show  {showAll == false ? 'More ...' : 'Less'} 
                 </a>
               </div>
+      </section>
+
+      <div className="hr"></div>
+
+      <section id="skills">
+        <Heading firstWord="Skills" secondWord="&Tools" />
+        <motion.div
+          className="skill-map"
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={containerVariants}
+        >
+          {skills.map((skill, index) => (
+            <motion.div key={index} variants={skillVariants}>
+              <Skill skill={skill} />
+            </motion.div>
+          ))}
+        </motion.div>
       </section>
 
       <div className="hr"></div>

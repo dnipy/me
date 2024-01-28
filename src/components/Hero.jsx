@@ -3,18 +3,14 @@ import { motion } from "framer-motion";
 import Heading from "./Heading";
 import socials from "../content/socials";
 import Typewriter from "typewriter-effect";
-
+import ME from "../../public/MEE.svg"
 const Hero = (props) => {
   return (
     <div className="container">
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        whileHover={{ scale: 1.3}}
-        className="pfp"
-      >
-        <img src={props.img} alt="@dnipy" />
-      </motion.div>
+      <div style={{display : 'flex',justifyContent : 'center',alignItems : 'center'}}>
+        <img src={ME} alt="@dnipy" style={{maxWidth : '600px',height : 'auto',width : '100%'}} />
+      </div>
+
 
       <Heading firstWord="Who" secondWord="AmI?" />
       <div className="hero-typewriter">
