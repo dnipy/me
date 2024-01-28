@@ -8,7 +8,7 @@ const Hero = (props) => {
   return (
     <div className="container">
       <div style={{display : 'flex',justifyContent : 'center',alignItems : 'center'}}>
-        <img src={ME} alt="@dnipy" style={{maxWidth : '600px',height : 'auto',width : '100%'}} />
+        <img src={ME} alt={`دانیال رحمانی - danial rahmani`} title="دانیال رحمانی - danial rahmani" style={{maxWidth : '600px',height : 'auto',width : '100%'}} />
       </div>
 
 
